@@ -1,0 +1,21 @@
+<div fxLayoutAlign="center" style="margin-top:100px">
+  <mat-card fxFlex="60%">
+    <mat-card-header>
+      <mat-card-title>My Card</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+
+        <div id="card-element" style="padding: 20px;"></div>
+
+        <div fxLayoutAlign="center" fxLayoutGap="20px" fxLayout="column">
+          <mat-label fxFlex>Price: $20 </mat-label>
+          <button fxFlex mat-raised-button (click)="onPaymentOldStyle(20, 'usd', 'pay with old method')" color="primary">Pay By Old Style</button>
+          <button fxFlex  mat-raised-button (click)="onPaymentNewStyle(20, 'usd', 'pay with latest method')" color="primary">Pay By New Style</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
